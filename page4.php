@@ -70,26 +70,6 @@
 		<link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
 		<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
 		<script src="js/bootstrap.js"></script>
-		<link rel="apple-touch-icon-precomposed" sizes="57x57" href="apple-touch-icon-57x57.png" />
-		<link rel="apple-touch-icon-precomposed" sizes="114x114" href="apple-touch-icon-114x114.png" />
-		<link rel="apple-touch-icon-precomposed" sizes="72x72" href="apple-touch-icon-72x72.png" />
-		<link rel="apple-touch-icon-precomposed" sizes="144x144" href="apple-touch-icon-144x144.png" />
-		<link rel="apple-touch-icon-precomposed" sizes="60x60" href="apple-touch-icon-60x60.png" />
-		<link rel="apple-touch-icon-precomposed" sizes="120x120" href="apple-touch-icon-120x120.png" />
-		<link rel="apple-touch-icon-precomposed" sizes="76x76" href="apple-touch-icon-76x76.png" />
-		<link rel="apple-touch-icon-precomposed" sizes="152x152" href="apple-touch-icon-152x152.png" />
-		<link rel="icon" type="image/png" href="favicon-196x196.png" sizes="196x196" />
-		<link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96" />
-		<link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
-		<link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
-		<link rel="icon" type="image/png" href="favicon-128.png" sizes="128x128" />
-		<meta name="application-name" content="&nbsp;"/>
-		<meta name="msapplication-TileColor" content="#FFFFFF" />
-		<meta name="msapplication-TileImage" content="mstile-144x144.png" />
-		<meta name="msapplication-square70x70logo" content="mstile-70x70.png" />
-		<meta name="msapplication-square150x150logo" content="mstile-150x150.png" />
-		<meta name="msapplication-wide310x150logo" content="mstile-310x150.png" />
-		<meta name="msapplication-square310x310logo" content="mstile-310x310.png" />
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 
 					<style>
@@ -171,25 +151,19 @@
 		<div class="container">
 	
 			<div class="row">
+			<div class="col-md-4"></div>
 			
-			
-			<div class="col-md-6">
+			<div class="col-md-4">
 			
 				<h2 class="text-center"><u>About</u></h2>
 				
-				<p class="text-justify">New szn is a Mens fashion and miscellaneous blog where the current direction of trends gets discussed and reviewed. The site focuses mainly on the ethnology on the elegance and style of todays youth. New Szn hopes to bring you cheaper and more economical focused clothes and products (as well as some hyped ass shit) that meets the needs of you guys. </p>
-				<p class="text-justify">The stuff section of this site offers just about anything, From male grooming to exam tips to help you perform your best. 	New Szn hopes to cater for a wide variety of different topics to suit whatever demand you are calling for.</p>
-				<p class="text-justify">Have a query or want to write an article for the blog, contact New Szn on our social media platforms or fill out the contact form below.</p>
+				<p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean iaculis placerat luctus. Etiam egestas ultricies nulla, sit amet placerat massa sodales pellentesque. Sed eu risus vitae odio commodo eleifend ut quis massa. Curabitur lacinia turpis odio, vitae pretium turpis gravida sit amet. Ut auctor, massa at scelerisque iaculis, urna mauris vestibulum dolor, at maximus metus elit ut metus. In felis nunc, rutrum quis pretium ac, cursus sed nulla. Suspendisse auctor ligula ut tempor aliquet. </p>
+				<p class="text-justify">Aenean enim diam, viverra sit amet ultrices nec, ultrices et nibh. Nulla pharetra mauris congue erat imperdiet vestibulum. Vivamus mollis ante a pulvinar tempor. Pellentesque vitae tortor non mi dignissim euismod blandit vitae elit. Praesent at elementum nunc, nec iaculis justo. Integer quis est sit amet odio ultricies luctus non sit amet massa</p>
+				<p class="text-justify">Suspendisse lectus enim, elementum eu nulla at, finibus posuere leo. Mauris pellentesque tempus turpis, sit amet efficitur eros venenatis ut. Etiam sodales lacus lacus, a viverra velit pellentesque in. Nulla facilisi.</p>
 				<p class="text-center"><i class="em em-wave"></i></p>
 				
 			</div>
-			<div class="col-md-6">
-			<div class="twitter padding">
-		<a class="twitter-timeline" href="https://twitter.com/google" data-widget-id="663793932497723392">Tweets by @google</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-		</div> 
-			
-			
-			</div>
+			<div class="col-md-4"></div>
 			</div>
 		
 		</div>

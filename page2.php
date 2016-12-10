@@ -63,26 +63,6 @@
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" />
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 		<link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
-		<link rel="apple-touch-icon-precomposed" sizes="57x57" href="apple-touch-icon-57x57.png" />
-		<link rel="apple-touch-icon-precomposed" sizes="114x114" href="apple-touch-icon-114x114.png" />
-		<link rel="apple-touch-icon-precomposed" sizes="72x72" href="apple-touch-icon-72x72.png" />
-		<link rel="apple-touch-icon-precomposed" sizes="144x144" href="apple-touch-icon-144x144.png" />
-		<link rel="apple-touch-icon-precomposed" sizes="60x60" href="apple-touch-icon-60x60.png" />
-		<link rel="apple-touch-icon-precomposed" sizes="120x120" href="apple-touch-icon-120x120.png" />
-		<link rel="apple-touch-icon-precomposed" sizes="76x76" href="apple-touch-icon-76x76.png" />
-		<link rel="apple-touch-icon-precomposed" sizes="152x152" href="apple-touch-icon-152x152.png" />
-		<link rel="icon" type="image/png" href="favicon-196x196.png" sizes="196x196" />
-		<link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96" />
-		<link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
-		<link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
-		<link rel="icon" type="image/png" href="favicon-128.png" sizes="128x128" />
-		<meta name="application-name" content="&nbsp;"/>
-		<meta name="msapplication-TileColor" content="#FFFFFF" />
-		<meta name="msapplication-TileImage" content="mstile-144x144.png" />
-		<meta name="msapplication-square70x70logo" content="mstile-70x70.png" />
-		<meta name="msapplication-square150x150logo" content="mstile-150x150.png" />
-		<meta name="msapplication-wide310x150logo" content="mstile-310x150.png" />
-		<meta name="msapplication-square310x310logo" content="mstile-310x310.png" />
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 	
 	
@@ -192,9 +172,9 @@
 	   <div class="col-sm-4 col-xs-6">
       
         <div class="panel panel-default">
-          <div class="panel-thumbnail"><a href="#" title="Indie Spice"><img src="images/ind.png" class="img-responsive"></a></div>
+          <div class="panel-thumbnail"><a href="BunsonBurger.php" title="Bunson Burger"><img src="images/bunson/burger3.png" width = "358" height = "270" class="img-responsive"></a></div>
           <div class="panel-body">
-            <p>Indie Spice</p>
+            <a href = "BunsonBurger.php"<p>Bunson Burger</p></a>
             <p></p>
 
           </div>
@@ -204,9 +184,9 @@
       <div class="col-sm-4 col-xs-6">
       
       	<div class="panel panel-default">
-          <div class="panel-thumbnail"><a href="#" title="Flint Pizza"><img src="images/pizzaSmall.png" class="img-responsive"></a></div>
+          <div class="panel-thumbnail"><a href="Skin.php" title="Flint Pizza"><img src="images/pizzaSmall.png" class="img-responsive"></a></div>
           <div class="panel-body">
-            <p>Flint Pizza</p>
+            <a href = "Skin.php"<p>SkinFlint Pizza</p></a>
             <p></p>
             
           </div>
@@ -216,9 +196,9 @@
       <div class="col-sm-4 col-xs-6">
       
       	<div class="panel panel-default">
-          <div class="panel-thumbnail"><a href="#" title="Rubys"><img src="images/burg.png" class="img-responsive"></a></div>
+          <div class="panel-thumbnail"><a href="Ruby.php" title="Rubys"><img src="images/burg.png" class="img-responsive"></a></div>
           <div class="panel-body">
-            <p>Rubys</p>
+            <a href = "Ruby.php"<p>Rubys</p></a>
             <p></p>
             
           </div>
@@ -229,9 +209,9 @@
       <div class="col-sm-4 col-xs-6">
       
       	<div class="panel panel-default">
-          <div class="panel-thumbnail"><a href="#" title="New Construction"><img src="images/chinese.png" class="img-responsive"></a></div>
+          <div class="panel-thumbnail"><a href="Chin.php" title="New Construction"><img src="images/chinese.png" class="img-responsive"></a></div>
           <div class="panel-body">
-            <p>The Orchid Chinese Restaurant</p>
+            <a href = "Chin.php"<p>The Orchid Chinese Restaurant</p></a>
             <p></p>
             
           </div>
@@ -242,9 +222,9 @@
       <div class="col-sm-4 col-xs-6">
       
       	<div class="panel panel-default">
-          <div class="panel-thumbnail"><a href="#" title="Site Planning"><img src="images/aussie.png" class="img-responsive"></a></div>
+          <div class="panel-thumbnail"><a href="Aussie.php" title="Site Planning"><img src="images/aussie.png" class="img-responsive"></a></div>
           <div class="panel-body">
-            <p>Aussie BBQ</p>
+            <a href = "Aussie.php"<p>Aussie BBQ</p></a>
             <p></p>
             
           </div>
@@ -263,7 +243,7 @@
 
           </div>
           <div class="panel-body">
-            <p>Contact Us!</p>
+            <p>Click on the picture!</p>
             <p></p>
             
           </div>

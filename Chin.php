@@ -15,7 +15,7 @@
 
 	<head>
 	
-		<title>New Szn | Bomber</title>
+		<title>Spice Blog | The Orchid</title>
 		
 		<!-- Latest compiled and minified CSS -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
@@ -30,52 +30,7 @@
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" />
 		<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
 		<script src="js/bootstrap.js"></script>
-		<link rel="apple-touch-icon-precomposed" sizes="57x57" href="apple-touch-icon-57x57.png" />
-		<link rel="apple-touch-icon-precomposed" sizes="114x114" href="apple-touch-icon-114x114.png" />
-		<link rel="apple-touch-icon-precomposed" sizes="72x72" href="apple-touch-icon-72x72.png" />
-		<link rel="apple-touch-icon-precomposed" sizes="144x144" href="apple-touch-icon-144x144.png" />
-		<link rel="apple-touch-icon-precomposed" sizes="60x60" href="apple-touch-icon-60x60.png" />
-		<link rel="apple-touch-icon-precomposed" sizes="120x120" href="apple-touch-icon-120x120.png" />
-		<link rel="apple-touch-icon-precomposed" sizes="76x76" href="apple-touch-icon-76x76.png" />
-		<link rel="apple-touch-icon-precomposed" sizes="152x152" href="apple-touch-icon-152x152.png" />
-		<link rel="icon" type="image/png" href="favicon-196x196.png" sizes="196x196" />
-		<link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96" />
-		<link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
-		<link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
-		<link rel="icon" type="image/png" href="favicon-128.png" sizes="128x128" />
-		<meta name="application-name" content="&nbsp;"/>
-		<meta name="msapplication-TileColor" content="#FFFFFF" />
-		<meta name="msapplication-TileImage" content="mstile-144x144.png" />
-		<meta name="msapplication-square70x70logo" content="mstile-70x70.png" />
-		<meta name="msapplication-square150x150logo" content="mstile-150x150.png" />
-		<meta name="msapplication-wide310x150logo" content="mstile-310x150.png" />
-		<meta name="msapplication-square310x310logo" content="mstile-310x310.png" />
-		<meta charset="UTF-8">
-		<meta name="description" content="New Szn is a mens fashion and just general cool miscellaneous website that caters for all of your needs. Click in and take a look around. ">
-		<meta name="keywords" content="New Szn,Szn,Bomber,Bomber jacket, Bomber szn, Read, Read More, jackets, Coats, Shopping, winter, shopping for the winter, Face, men's face, good mens face cream, shaving, dry skin, new szn twitter, new szn instagram, new szn facebook">
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
-
-		
-	<meta content='text/html; charset=UTF-8' http-equiv='Content-Type'/>
-	<meta name="twitter:card" content="player">
-	<meta name="twitter:site" content="@newszn_">
-	<meta name="twitter:title" content="Bomber SZN">
-	<meta name="twitter:description" content="We've picked out the best bomber jackets under €100 straight from the highstreet to help you start this season well.">
-	<meta name="twitter:image" content="http://fashion.gear.host/bombcov.png">
-	<meta name="twitter:player" content="http://fashion.gear.host/cheap-bomber-jackets.html">
-	<meta name="twitter:player:width" content="480">
-	<meta name="twitter:player:height" content="480">
-	
-		
-		
-		<meta property="og:title"
-		content="Cheap Bombers from the highstreet to ad to your collection for a cheap and cheerful amount of €€€" />
-		<meta property="og:site_name" content="New Szn"/>
-		<meta property="og:url"
-		content="http://fashion.gear.host/cheap-bomber-jackets.html" />
-		<meta property="og:description" content="Bomber jackets have gradually entered pop culture and into many wardrobes of men in rapid form. The bomber is a the perfect jacket for all seasons, that being said, it can easily be used to dress up for a night out or dress down for...." />
-		<meta property="og:type" content="article" />
-		<meta property="og:image"              content="http://fashion.gear.host/bombcov.png" />
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<!--JavaScript code goes here.-->
 <script>
@@ -118,7 +73,7 @@ jQuery(document).ready(function() {
             
           </button>
           
-          <a class="navbar-brand" href="index.html"><img  id="brand-image" src="images/navbarpic.png" alt="brand image logo for spice bag" /></a>
+          <a class="navbar-brand" href="index.php"><img  id="brand-image" src="images/navbarpic.png" alt="brand image logo for spice bag" /></a>
         </div>
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav navbar-right">
@@ -153,41 +108,13 @@ jQuery(document).ready(function() {
 
 		<div class="bg" id="toHome">
 		<br><br><br>
-		<a href="page2.php"><img src="fashionszn.png" class="img-responsive center-block" title="Back to the fashion page" alt="rectange image of fashion szn"/></a>
+		<a href="page2.php"><img src="images/chinese/ChineseCover.png" class="img-responsive center-block" title="Back to the review page" alt="rectange image of fashion szn"/></a>
 		
 	
 	
 	</div>
 	</div>	
 
-	
-		
-		<div class="alt1" >
-		<div class="container padding" >
-	
-			<div class="row">
-			
-			<div class="col-md-12">
-			
-				<h2 class="text-center" id="greatest"> Bunson Burger </h2>
-				<p class="text-center"><span10>By Spice Blog</span10></p>
-				
-				
-			</div>
-			
-			<div class="col-md-4"></div>
-			
-			<div class="col-md-4">
-			
-				<p1 class="text-justify"><br>Follow Spice Blog on all of our <a class="back" href="#socials">Social Media</a> accounts to stay up-to-date on the reviews If you wanna hit us up,head over to the contact section.</p1>
-			
-			<div class="col-md-4"></div>
-	
-		</div>
-		
-		</div>
-	
-	</div>
 
 	<div class="container">
 	
@@ -198,25 +125,17 @@ jQuery(document).ready(function() {
 		
 		<div class="col-md-4">
 		<h2>Location</h2>
-		<p class="text-justify">Bomber jackets have gradually entered pop culture and into many wardrobes of men in rapid form. The bomber is a the perfect jacket for all seasons, that being said, it can easily be used to dress up for a night out or dress down for heading to college while still feeling salient.</p>
-		<p class="text-justify">The contemporary bomber jacket gives your wardrobe a different outlook and a catalyst for planning an outfit , paring it up with the general basics that we all love to wear will instantly galvanize your whole look.</p>
-		<p class="text-justify">A Bomber jacket is more essential to your life than water, trust us.</p>
-		<p class="text-justify">Check out some cheap bombers below to get the best bang for your buck. </p>
-		<p class="text-justify">Simply place your mouse cursor over the picture to find out more about the items</p>
-		<p class="text-justify">If you are on the computer simply place your mouse cursor over the picture to find out more about the items</p>
-		<p class="text-justify">Click on the image to direct you to the site to buy any of the items you like.</p>
-		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2382.3371848588504!2d-6.26808908384066!3d53.33722007997715!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48670e9e2cf3ab1f%3A0x4d2ffd8ffde8facd!2sBunsen!5e0!3m2!1sen!2sie!4v1481204716028" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+		<p class="text-justify">Lorem ipsum dolor sit amet, nullam noluisse at eos, facilis lobortis reprehendunt cu sed. Evertitur definitiones cu mei. Quodsi indoctum ocurreret te per, suavitate constituam referrentur cu has. Per delicata scripserit cu, usu cu dicit fabulas, ex vel dicant voluptatum. Est ex liber dolor legendos, errem persecuti constituam quo at, vis epicurei reprimique reprehendunt te.</p>
+		<p class="text-justify">Ullum epicurei ei nec, id aliquid veritus suscipit quo. Cetero sanctus posidonium mel ei. At postulant reprehendunt est, ea quo idque blandit deterruisset, cu mei nibh scribentur. An vis possim adipisci, cum lorem possit id. Vix cu viris facilisi appellantur, eam ne errem primis definiebas. Fuisset explicari intellegat ea nam, nibh commodo ut mea.</p>
+		<p class="text-justify">Discere elaboraret repudiandae cu mea, ne his summo vituperatoribus, lorem intellegam disputando mei et. In quo dolore legimus, aliquid urbanitas et pro. Et has ubique volutpat, at vide dissentias his. Magna altera eu sea, eu appareat liberavisse eam. Sed in debet quidam, id usu bonorum interesset, dolorem adipisci ex nam. Diam magna blandit ad sit, ea pri adhuc soluta vocibus. Magna sonet dicant duo ei.</p>
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2375.962103469508!2d-6.156085848691233!3d53.451263679902915!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48671a60f61e2bf9%3A0xb2bf4c7aa410a3b0!2sOrchid+Chinese+Restaurant!5e0!3m2!1sen!2sie!4v1481227861571" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
 		</div>
 		
 		<div class="col-md-4">
 		<h2>Info</h2>
-		<p class="text-justify">Bomber jackets have gradually entered pop culture and into many wardrobes of men in rapid form. The bomber is a the perfect jacket for all seasons, that being said, it can easily be used to dress up for a night out or dress down for heading to college while still feeling salient.</p>
-		<p class="text-justify">The contemporary bomber jacket gives your wardrobe a different outlook and a catalyst for planning an outfit , paring it up with the general basics that we all love to wear will instantly galvanize your whole look.</p>
-		<p class="text-justify">A Bomber jacket is more essential to your life than water, trust us.</p>
-		<p class="text-justify">Check out some cheap bombers below to get the best bang for your buck. </p>
-		<p class="text-justify">Simply place your mouse cursor over the picture to find out more about the items</p>
-		<p class="text-justify">If you are on the computer simply place your mouse cursor over the picture to find out more about the items</p>
-		<p class="text-justify">Click on the image to direct you to the site to buy any of the items you like.</p>
+		<p class="text-justify">Lorem ipsum dolor sit amet, nullam noluisse at eos, facilis lobortis reprehendunt cu sed. Evertitur definitiones cu mei. Quodsi indoctum ocurreret te per, suavitate constituam referrentur cu has. Per delicata scripserit cu, usu cu dicit fabulas, ex vel dicant voluptatum. Est ex liber dolor legendos, errem persecuti constituam quo at, vis epicurei reprimique reprehendunt te.</p>
+		<p class="text-justify">Ullum epicurei ei nec, id aliquid veritus suscipit quo. Cetero sanctus posidonium mel ei. At postulant reprehendunt est, ea quo idque blandit deterruisset, cu mei nibh scribentur. An vis possim adipisci, cum lorem possit id. Vix cu viris facilisi appellantur, eam ne errem primis definiebas. Fuisset explicari intellegat ea nam, nibh commodo ut mea.</p>
+		<p class="text-justify">Discere elaboraret repudiandae cu mea, ne his summo vituperatoribus, lorem intellegam disputando mei et. In quo dolore legimus, aliquid urbanitas et pro. Et has ubique volutpat, at vide dissentias his. Magna altera eu sea, eu appareat liberavisse eam. Sed in debet quidam, id usu bonorum interesset, dolorem adipisci ex nam. Diam magna blandit ad sit, ea pri adhuc soluta vocibus. Magna sonet dicant duo ei.</p>
 		
 		</div>
 		<div class="col-md-2"></div>
@@ -227,20 +146,20 @@ jQuery(document).ready(function() {
 		<div class="container">
 			<div class="row">
 				<div class="col-md-4">
-				<a href="" target=_blank><img src="images/burger.png" class="img-square img-responsive" alt="asos bomber jacket" width="555px" height="531px"/> </a>
+				<a href="https://www.goldenpages.ie/orchid-chinese-restaurant-malahide/" target=_blank><img src="images/chinese/chinese1.png" class="img-square img-responsive" alt="asos bomber jacket" width="555px" height="531px"/> </a>
 				</div>
 				
 				
 				<div align="center">
 				<div class="col-md-4">
-						<a href="" target=_blank><img src="images/burger.png" class="img-square img-responsive" alt="asos bomber jacket" width="555px" height="531px"/> </a>	
-				<div align="center"><p class="sources">image/ASOS</p></div>
+						<a href="https://www.goldenpages.ie/orchid-chinese-restaurant-malahide/" target=_blank><img src="images/chinese/chinese2.png" class="img-square img-responsive" alt="asos bomber jacket" width="555px" height="531px"/> </a>	
+				
 				</div>
 				</div>
 				<div align="center">
 				<div class="col-md-4">
-					<a href="" target=_blank><img src="images/burger.png" class="img-square img-responsive" alt="h and m bomber jacket" width="555px" height="531px"/> </a>
-				<div align="center"><p class="sources">image/H&M, Wikimedia</p></div>
+					<a href="https://www.goldenpages.ie/orchid-chinese-restaurant-malahide/" target=_blank><img src="images/chinese/chinese3.png"" class="img-square img-responsive" alt="h and m bomber jacket" width="555px" height="531px"/> </a>
+				
 				</div>
 				</div>
 				
@@ -285,7 +204,7 @@ jQuery(document).ready(function() {
  			
  			<footer>
  			
- 			&copy; New Szn<br ><a id="back" href="#toHome">Back Home</a>
+ 			&copy; Spice Blog<br ><a id="back" href="#toHome">Back Home</a>
  			
  			<br>
  			
