@@ -4,7 +4,7 @@
 <?php
 	date_default_timezone_set('Europe/Dublin');
 	include 'dbh.php';
-	include 'comments0.php';
+	include 'comments1.php';
 ?>
 
 
