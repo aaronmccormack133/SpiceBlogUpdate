@@ -1,3 +1,14 @@
+<?php
+	session_start();
+?>
+<?php
+	date_default_timezone_set('Europe/Dublin');
+	include 'dbh.php';
+	include 'comments.inc.php';
+?>
+
+
+
 <!DOCTYPE html>
 
 <html>
@@ -94,7 +105,7 @@ jQuery(document).ready(function() {
 	
 	<body>
 	
-	<nav class="navbar navbar-default navbar-fixed-top">
+<nav class="navbar navbar-default navbar-fixed-top">
       <div class="container" id="home">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -107,21 +118,37 @@ jQuery(document).ready(function() {
             
           </button>
           
-          <a class="navbar-brand" href="index.html"><img  id="brand-image" src="NSNAV.png" alt="New szn logo"/></a>
+          <a class="navbar-brand" href="index.html"><img  id="brand-image" src="images/navbarpic.png" alt="brand image logo for spice bag" /></a>
         </div>
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav navbar-right">
           
-            <li ><a href="index.php">Home</a></li>
-            <li class="active"><a href="page2.php">Reviews</a></li>
-            <li><a href="page3.html">Stuff</a></li>
+            <li><a href="index.php">Home</a></li>
+            <li><a href="page2.php">Review</a></li>
+            <li><a href="page3.php">Stuff</a></li>
             <li><a href="page4.php">Contact</a></li>
-            
-          </ul>
+            <li><a href = "signup.php">SIGNUP</a></li>
+            <?php
+    if(isset($_SESSION['id'])){
+      echo "<form action='includes/logout.inc.php'>
+      <button>LOG OUT</button>
+      </form>";
+
+    }
+    else{
+      echo "<form action='includes/login.inc.php' method='POST'>
+      <input type='text' name='uid' placeholder='Username'>
+      <input type='password' name='pwd'placeholder='Password'>
+      <button type ='submit'>Login</button>
+    </form>";
+    }
+
+    
+    ?>
+       </ul>
         </div><!--/.nav-collapse -->
       </div>
-    </nav>	
-    
+    </nav>     
     <div class="c-wrapper"  >
 
 		<div class="bg" id="toHome">
@@ -224,10 +251,27 @@ jQuery(document).ready(function() {
 		
 		<div class = "container">
 			<div class ="row">
-				<div class = "col-md-4"><!-- sean put you comment code in this div-->
+				<div class = "col-md-4">
+					<?php
+						
+						if(isset($_SESSION['id'])){
+							echo "<form method='POST' action='".setComments($conn)."'> 
+						<input type='hidden' name='uid' value='".$_SESSION['id']."'>
+						<input type='hidden' name='date' value='".date('Y-m-d H:i:s')."'>
+						<textarea name='message'></textarea><br>
+						<button type='submit' name='commentSubmit'>comment</button>
+							</form>";
+						}
+						else{
+							echo "<p class = 'pCenter'>you need to be logged in to comment </p>";
+						}
+
+
+
+						getComments($conn);
+					?>
 				
-				
-				</div><!-- end of your comment div-->
+				</div>
 		
 		
 		</div>
