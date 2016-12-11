@@ -85,9 +85,9 @@
           
             <li><a href="index.php">Home</a></li>
             <li><a href="page2.php">Review</a></li>
-            <li class="active"><a href="page3.php">Stuff</a></li>
+            <li class="active"><a href="page3.php">Shouts</a></li>
             <li><a href="page4.php">Contact</a></li>
-            <li><a href = "signup.php">SIGNUP</a></li>
+            <li><a href = "signup.php">SignUp</a></li>
             
             <?php
 		if(isset($_SESSION['id'])){
@@ -130,18 +130,32 @@
 	
 			<div class="row">
 			
-			<div class="col-md-12">
-			
-				
-				<h1 class="text-center">IDK WHAT THIS SECTION EVEN IS TBH</h1>
-				
-			</div>
+
+
 			<div class="col-md-4"></div>
 			
 			<div class="col-md-4">
 			
 				
-				<p1 class="text-justify"><br>Follow New Szn on all of our <a class="back" href="#socials">Social Media</a> accounts to stay up-to-date on the new szn. If you wanna hit us up, head over to the contact section.</p1>
+				
+				<?php
+
+	$jsonData = file_get_contents("spice.json");
+	$json=json_decode($jsonData,true);
+
+	echo '<h3>Your Shouts</h3>';
+
+	$output="";
+	foreach($json['spice'] as $spice)
+	{
+		$output.="Name : ".$spice['Name']."<br />";
+		$output.="Location : ".$spice['Location']."<br />";
+		$output.="Website : ".$spice['Website']."<br />";
+		$output.="Reason : ".$spice['Reason']."<br />";
+		$output.="<br />";
+	}
+	echo $output;
+?>
 			
 				
 			</div>
@@ -156,29 +170,7 @@
 	
 
 	
-	<div class="container" id="blog">
 	
-	
-	
-		<hr />
-		<div class="row">
-		
-			<div class="col-md-6">
-				<img src="facecov.png" class="img-square img-responsive" alt="Face cream square Holding Image" />
-			
-			</div>
-			<div class="col-md-6">
-			<h2 class="text-center" id="face"><u>Face 2 Face</u></h2>
-			<p>Treat your face how you treat your clothes. I got you some good stuff listed to help your face feel and look good all day every day. I also saved your life by supplying you some tips that will give you a healthier face, you're welcome.</p>
-			<a href="skin-care.html" class="btn btn-default">Read More...</a> 
-			
-			</div>
-			
-		</div>
-		
-		<hr />	
-		
-		</div>
 		
 		
 

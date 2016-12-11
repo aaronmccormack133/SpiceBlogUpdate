@@ -109,9 +109,9 @@
           
             <li><a href="index.php">Home</a></li>
            	<li><a href="page2.php">Review</a></li>
-          	<li><a href="page3.php">Stuff</a></li>
+          	<li><a href="page3.php">Shouts</a></li>
             <li class="active"><a href="page4.php">Contact</a></li>
-       		<li><a href = "signup.php">SIGNUP</a></li>
+       		<li><a href = "signup.php">SignUp</a></li>
 
             <?php
 		if(isset($_SESSION['id'])){

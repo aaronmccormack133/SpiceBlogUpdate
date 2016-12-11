@@ -1,5 +1,6 @@
 <?php
 
+
 function setComments($conn){
 	if(isset($_POST['commentSubmit'])){
 		$uid = $_POST['uid'];
@@ -76,3 +77,4 @@ function deleteComments($conn){
 		header("Location: index.php");
 	}
 }
+

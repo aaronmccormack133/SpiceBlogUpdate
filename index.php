@@ -52,9 +52,9 @@
           
             <li class="active"><a href="index.php">Home</a></li>
             <li><a href="page2.php">Review</a></li>
-          	<li><a href="page3.php">Stuff</a></li>
+          	<li><a href="page3.php">Shouts</a></li>
             <li><a href="page4.php">Contact</a></li>
-          	<li><a href = "signup.php">SIGNUP</a></li>
+          	<li><a href = "signup.php">SignUp</a></li>
             <?php
 		if(isset($_SESSION['id'])){
 			echo "<form action='includes/logout.inc.php'>
@@ -140,7 +140,7 @@
 			
 			<p class="text-justify">Sit at stools and high tables among exposed pipes at this trendy, laid back diner with compact menu.</p>
 			<br>
-			<div class="col-md-12 text-center"> <a href="skinflint.php" class="btn btn-default">R e a d   M o r e...</a></div>
+			<div class="col-md-12 text-center"> <a href="skin.php" class="btn btn-default">R e a d   M o r e...</a></div>
 			</div>
 			 <div class="col-md-3"></div>
 			

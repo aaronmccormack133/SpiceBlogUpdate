@@ -1,0 +1,54 @@
+{
+	"spice":
+		[
+			{
+				"Name":"Dax Restaurant",
+				"Location":"23 Pembroke Street Upper, Dublin 2",
+				"Website":"http://www.dax.ie/restaurant/",
+				"Reason":"A great dining experience"
+			},
+			{
+				"Name":"Chapter One Restaurant",
+				"Location":"18-19 Parnell Square, Dublin 1",
+				"Website":"http://www.chapteronerestaurant.com/",
+				"Reason":"The food is amazing"
+			},
+			{
+				"Name":"Zaragoza Dublin Restaurant",
+				"Location":"18 William St S, Dublin 2",
+				"Website":"http://zaragozadublin.com/",
+				"Reason":"Tiki taka Spanish food"
+			},
+			{
+				"Name":"The Pig's Ear",
+				"Location":"4 Nassau St, Dublin 2",
+				"Website":"http://www.thepigsear.ie/",
+				"Reason":"Tasty and cheap Food"
+			},
+			{
+				"Name":"F.X.BUCKLEY",
+				"Location":"1A Pembroke Street Lower, Dublin 2",
+				"Website":"http://www.fxbuckley.ie/",
+				"Reason":"Steak, Steak, Steak"
+			},
+			{
+				"Name":"Umi Falafel",
+				"Location":"13 Dame St, Dublin 2",
+				"Website":"http://umifalafel.ie/",
+				"Reason":"Vegetarian restaurant"
+			},
+			{
+				"Name":"The Vintage Kitchen",
+				"Location":"7 Poolbeg St, Dublin 2",
+				"Website":"http://www.thevintagekitchen.ie/",
+				"Reason":"I love it"
+			},
+			{
+				"Name":"Farm",
+				"Location":"3 Dawson St, Dublin 2",
+				"Website":"http://www.thefarmfood.ie/",
+				"Reason":"This Place"
+			}
+			
+		]
+}
