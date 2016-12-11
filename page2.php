@@ -85,7 +85,7 @@
             
           </button>
           
-          <a class="navbar-brand" href="index.html"><img  id="brand-image" src="images/navbarpic.png" alt="brand image logo for spice bag" /></a>
+          <a class="navbar-brand" href="index.php"><img  id="brand-image" src="images/SpiceBlogLogo.png" alt="brand image logo for spice bag" /></a>
         </div>
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav navbar-right">
@@ -94,7 +94,7 @@
             <li class="active"><a href="page2.php">Review</a></li>
             <li><a href="page3.php">Shouts</a></li>
             <li><a href="page4.php">Contact</a></li>
-            <li><a href = "signup.php">SignUp</a></li>
+            <li><a href = "signup.php">Sign Up</a></li>
             <?php
     if(isset($_SESSION['id'])){
       echo "<form action='includes/logout.inc.php'>
@@ -318,7 +318,7 @@
 					<a id="a" title="Facebook" href="#"  target="_blank"><span><i class="fa fa-facebook fa-3x"></i></span></a>
  					<a id="oo" title="Twitter" href="#"  target="_blank"><span><i class="fa fa-twitter fa-3x"></i></span></a>
  					<a id="b" title="Instagram" href="#"  target="_blank"><span><i class="fa fa-instagram fa-3x"></i></span></a>
- 					<a id="e" title="Mail" href="mailto:thenewszn@gmail.com?Subject=Whats%20Up?" target="_top"  ><span><i class="fa fa-envelope fa-3x"></i></span></a>
+ 					<a id="e" title="Mail" href="mailto:SpiceBlog@gmail.com?Subject=Whats%20Up?" target="_top"  ><span><i class="fa fa-envelope fa-3x"></i></span></a>
  			
 				</footer>
  			

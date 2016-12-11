@@ -4,7 +4,7 @@
 <?php
 	date_default_timezone_set('Europe/Dublin');
 	include 'dbh.php';
-	include 'comments2.php';
+	include 'comments.inc.php';
 ?>
 
 
@@ -73,16 +73,16 @@ jQuery(document).ready(function() {
             
           </button>
           
-          <a class="navbar-brand" href="index.php"><img  id="brand-image" src="images/navbarpic.png" alt="brand image logo for spice bag" /></a>
+          <a class="navbar-brand" href="index.php"><img  id="brand-image" src="images/SpiceBlogLogo.png" alt="brand image logo for spice bag" /></a>
         </div>
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav navbar-right">
           
             <li><a href="index.php">Home</a></li>
             <li><a href="page2.php">Review</a></li>
-            <li><a href="page3.php">Stuff</a></li>
+            <li><a href="page3.php">Shouts</a></li>
             <li><a href="page4.php">Contact</a></li>
-            <li><a href = "signup.php">SIGNUP</a></li>
+            <li><a href = "signup.php">Sign Up</a></li>
             <?php
     if(isset($_SESSION['id'])){
       echo "<form action='includes/logout.inc.php'>
@@ -158,7 +158,7 @@ jQuery(document).ready(function() {
 				</div>
 				<div align="center">
 				<div class="col-md-4">
-					<a href="https://www.goldenpages.ie/orchid-chinese-restaurant-malahide/" target=_blank><img src="images/chinese/chinese3.png"" class="img-square img-responsive" alt="h and m bomber jacket" width="555px" height="531px"/> </a>
+					<a href="https://www.goldenpages.ie/orchid-chinese-restaurant-malahide/" target=_blank><img src="images/chinese/chinese3.png" class="img-square img-responsive" alt="h and m bomber jacket" width="555px" height="531px"/> </a>
 				
 				</div>
 				</div>
@@ -170,16 +170,27 @@ jQuery(document).ready(function() {
 		
 		<div class = "container">
 			<div class ="row">
-				<div class = "col-md-4">
+				<div class = "col-md-4"></div>
+				<div class = "col-md-4 formdiv">
 					<?php
 						
 						if(isset($_SESSION['id'])){
-							echo "<form method='POST' action='".setComments($conn)."'> 
-						<input type='hidden' name='uid' value='".$_SESSION['id']."'>
-						<input type='hidden' name='date' value='".date('Y-m-d H:i:s')."'>
-						<textarea name='message'></textarea><br>
-						<button type='submit' name='commentSubmit'>comment</button>
-							</form>";
+							echo "<form method='POST' action='".setComments($conn)."'>
+							<div class='form-group'>
+								<input class='form-control' type='hidden' name='uid' value='".$_SESSION['id']."'>
+							</div>
+							<div class='form-group'>
+								<input class='form-control' type='hidden' name='date' value='".date('Y-m-d H:i:s')."'>
+							</div>
+							<div class='form-group'>
+								<textarea class='form-control' name='title' placeholder='Restaurant name'></textarea>
+							</div>
+							<br>
+							<div class='form-group'>
+								<textarea class='form-control' name='message' placeholder='What are your thought?'></textarea>
+							</div>
+							<button class='btn btn-default' type='submit' name='commentSubmit'>Comment</button>
+							<p id='securityText'>Security Feature - Press delete twice to delete</p></form>";
 						}
 						else{
 							echo "<p class = 'pCenter'>you need to be logged in to comment </p>";
@@ -191,6 +202,7 @@ jQuery(document).ready(function() {
 					?>
 				
 				</div>
+				<div class = "col-md-4"></div>
 		
 		
 		</div>
@@ -211,7 +223,7 @@ jQuery(document).ready(function() {
  			<a id="a" title="Facebook" href="#"  target="_blank"><span><i class="fa fa-facebook fa-3x"></i></span></a>
  			<a id="oo" title="Twitter" href="#"  target="_blank"><span><i class="fa fa-twitter fa-3x"></i></span></a>
  			<a id="b" title="Instagram" href="#"  target="_blank"><span><i class="fa fa-instagram fa-3x"></i></span></a>
- 			<a id="e" title="Mail" href="mailto:thenewszn@gmail.com?Subject=Whats%20Up?" target="_top"  ><span><i class="fa fa-envelope fa-3x"></i></span></a>
+ 			<a id="e" title="Mail" href="mailto:SpiceBlog@gmail.com?Subject=Whats%20Up?" target="_top"  ><span><i class="fa fa-envelope fa-3x"></i></span></a>
  			
  			
  			

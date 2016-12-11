@@ -283,6 +283,7 @@ margin:auto 0;
 
 }
 
+
 p1{
 
 text-align:center;
@@ -340,36 +341,46 @@ color:#B8B4B4;
 color:#FDACC4;
 }
 
-#s1{
-color:#FDACC4;
+#s1, #a, #oo, #b, #e{
+color:#FFAB40;
 margin: 0px 15px;
 
 
 }
 
 #s2{
-color:#FDACC4;
+color:#FFAB40;
 margin: 0px 15px;
 }
 
 #s3{
-color:#FDACC4;
+color:#FFAB40;
 margin: 0px 15px;
 }
 
 #s4{
-color:#FDACC4;
+color:#FFAB40;
 margin: 0px 15px;
 }
 
 #s5{
-color:#FDACC4;
+color:#FFAB40;
 margin: 0px 15px;
 }
 
 #s6{
-color:#FDACC4;
+color:#FFAB40;
 margin: 0px 15px;
+}
+
+/*form*/
+.formdiv{
+  display: block;
+  text-align: center;
+}
+
+#securityText{
+  color: red;
 }
 
 

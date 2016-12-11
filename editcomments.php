@@ -5,11 +5,6 @@
 	date_default_timezone_set('Europe/Dublin');
 	include 'dbh.php';
 	include 'comments.inc.php';
-	include 'comments0.php';
-	include 'comments1.php';
-	include 'comments2.php';
-	include 'comments3.php';
-	include 'comments4.php';
  ?>
 
 <!DOCTYPE html>
@@ -52,7 +47,7 @@
             
           </button>
           
-          <a class="navbar-brand" href="index.html"><img  id="brand-image" src="images/navbarpic.png" alt="brand image logo for spice bag" /></a>
+          <a class="navbar-brand" href="index.php"><img  id="brand-image" src="images/SpiceBlogLogo.png" alt="brand image logo for spice bag" /></a>
         </div>
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav navbar-right">
@@ -85,7 +80,8 @@
         </div><!--/.nav-collapse -->
       </div>
     </nav>	
-
+<div class="col-md-4"></div>
+<div class="col-md-4 formdiv">
 <?php
 $cid = $_POST['cid'];
 $uid = $_POST['uid'];
@@ -93,15 +89,25 @@ $date = $_POST['date'];
 $message = $_POST['message'];
 
 echo "<br><br><br><br><br><form method='POST' action='".editComments($conn)."'> 
-	<input type='hidden' name='cid' value='".$_POST['cid']."'>
-	<input type='hidden' name='uid' value='".$_POST['uid']."'>
-	<input type='hidden' name='date' value='".$_POST['date']."'>
-	<textarea name='message'>".$message."</textarea><br>
-	<button type='submit' name='commentSubmit'>Edit</button>
+	<div class='form-group'>
+	<input class='form-control' type='hidden' name='cid' value='".$_POST['cid']."'>
+	</div>
+	<div class='form-group'>
+	<input class='form-control' type='hidden' name='uid' value='".$_POST['uid']."'>
+	</div>
+	<div class='form-group'>
+	<input class='form-control' type='hidden' name='date' value='".$_POST['date']."'>
+	</div>
+	<div class='form-group'>
+	<textarea class='form-control' name='message'>".$message."</textarea><br>
+	</div>
+	<button class='btn btn-default' type='submit' name='commentSubmit'>Edit</button>
 </form>";
 
 
 ?>
+</div>
+<div class="col-md-4"></div>
 
 
 </body>

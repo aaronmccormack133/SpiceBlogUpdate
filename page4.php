@@ -3,10 +3,12 @@
 ?>
 
 <?php  
- $message = '';  
- $error = '';  
- if(isset($_POST["submit"]))  
- {  
+$message = '';  
+$error = '';  
+include_once $_SERVER['DOCUMENT_ROOT'] . '/spice/securimage/securimage.php';
+$securimage = new Securimage();
+$secureimage = '';
+if(isset($_POST["submit"])){  
       if(empty($_POST["name"]))  
       {  
            $error = "<label class='text-danger'>Enter Name</label>";  
@@ -19,7 +21,14 @@
       else if(empty($_POST["comment"]))  
       {  
            $error = "<label class='text-danger'>Enter Comment</label>";  
-      }   
+      }  
+      else if ($securimage->check($_POST['captcha_code']) == false) {
+	      //the code was incorrect
+	     $error = "<label class='text-danger'>Captcha incorrect<label>";
+	     //echo "The security code entered was incorrect.<br/><br/>";
+	     //echo "Please go <a href='javascript:history.go(-1)'>back and try again.";
+	     //exit;
+	}
       else  
       {  
            if(file_exists('c_data.json'))  
@@ -43,8 +52,11 @@
            {  
                 $error = 'JSON File not exits';  
            }  
-      }  
- } 
+      } 
+}
+;
+
+ 
 ?>
 
 <!DOCTYPE html>
@@ -54,7 +66,7 @@
 
 	<head>
 	
-		<title>New Szn | Contact</title>
+		<title>Spice Blog | Contact</title>
 		
 		<!-- Latest compiled and minified CSS -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
@@ -71,24 +83,14 @@
 		<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
 		<script src="js/bootstrap.js"></script>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-
 					<style>
-.error {color: #FF0000;}
-.green {color: green;}
-.red {color: red;}
-.center { margin: 0 auto; max-width: 900px; }
-</style>
-	
-	
-	
-	
-	
-	
-	
+						.error {color: #FF0000;}
+						.green {color: green;}
+						.red {color: red;}
+						.center { margin: 0 auto; max-width: 900px; }
+					</style>
 	</head>
-	
 	<body>
-
 	<nav class="navbar navbar-default navbar-fixed-top">
       <div class="container" id="home">
         <div class="navbar-header">
@@ -102,7 +104,7 @@
             
           </button>
           
-          <a class="navbar-brand" href="index.html"><img  id="brand-image" src="images/navbarpic.png" alt="brand image logo for spice bag" /></a>
+          <a class="navbar-brand" href="index.php"><img  id="brand-image" src="images/SpiceBlogLogo.png" alt="brand image logo for spice bag" /></a>
         </div>
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav navbar-right">
@@ -111,7 +113,7 @@
            	<li><a href="page2.php">Review</a></li>
           	<li><a href="page3.php">Shouts</a></li>
             <li class="active"><a href="page4.php">Contact</a></li>
-       		<li><a href = "signup.php">SignUp</a></li>
+       		<li><a href = "signup.php">Sign Up</a></li>
 
             <?php
 		if(isset($_SESSION['id'])){
@@ -182,7 +184,7 @@
  			<a id="s2" title="Follow Our Twitter" href="#"  target="_blank"><span><i class="fa fa-twitter fa-5x"></i></span></a>
  			<a id="s3" title="Follow Our Instagram" href="#"  target="_blank"><span><i class="fa fa-instagram fa-5x"></i></span></a>
  			
-			<a id="s6" title="Mail Us" href="mailto:thenewszn@gmail.com?Subject=Whats%20Up?" target="_top"  ><span><i class="fa fa-envelope fa-5x"></i></span></a>
+			<a id="s6" title="Mail Us" href="mailto:SpiceBlog@gmail.com?Subject=Whats%20Up?" target="_top"  ><span><i class="fa fa-envelope fa-5x"></i></span></a>
  			
  			
  			</div>
@@ -190,41 +192,13 @@
 	
 	<div class="container">
 		<div class="row">
-		
-		
 		<div class="col-md-4"></div>
-		
-		
 		<div class="col-md-4">
-		
-		
-		
-		
 		</div>
-		
-		
 		<div class="col-md-4"></div>
-		
-		
-		
-		
-		
 		</div>
-	
-	
-	
-	
-	
 	</div>	
-	
-			
-		
- 
-		
-		
-	
 	<div class="container padding" id="contact">
-	
 	<hr />
 	<br>
 		
@@ -237,7 +211,7 @@
                      {  
                           echo $error;  
                      }  
-              ?> 
+              ?><br />
     		<div class="form-group">
      			 <label for="name">Name:</label>
       			 <input type="text" class="form-control" name="name" placeholder="Enter Name">
@@ -251,15 +225,24 @@
       			<label for="comment">Comment:</label>
  
      			 <input type="text" class="form-control" name="comment" placeholder="Enter Comment">
-  			</div>
+			</div>
+			<div class="formdiv">	
+				<div class="form-group">
+					<img id="captcha" src="securimage/securimage_show.php" alt="CAPTCHA Image"/>
+					<input type="text" name="captcha_code" size="10" maxlength="6" />
+					<a href="#" onclick="document.getElementById('captcha').src='securimage/securimage_show.php?' + Math.random(); return false">[ Different Image ]</a>
+				</div>
+			</div>
     	
-    			<button type="submit" name="submit" value="Append"class="btn btn-default">Submit</button>
+    			<div class="formdiv">
+    				<button type="submit" name="submit" value="Append"class="btn btn-default">Submit</button>
+    			</div>
+    			<br />
     			 <?php  
                      if(isset($message))  
                      {  
                           echo $message;  
-                     }  
-                     ?> 
+		     } ?><br/>
   			</form>
 					
 </div>
@@ -270,13 +253,13 @@
  			
  			<footer>
  			
- 			&copy; New Szn<br ><a id="back" href="#home">Back Home</a>
+ 			&copy; Spice Blog<br ><a id="back" href="#home">Back Home</a>
  			
  			<br>
  			<a id="a" title="Facebook" href="#"  target="_blank"><span><i class="fa fa-facebook fa-3x"></i></span></a>
  			<a id="oo" title="Twitter" href="#"  target="_blank"><span><i class="fa fa-twitter fa-3x"></i></span></a>
  			<a id="b" title="Instagram" href="#"  target="_blank"><span><i class="fa fa-instagram fa-3x"></i></span></a>
-			<a id="e" title="Mail" href="mailto:thenewszn@gmail.com?Subject=Whats%20Up?" target="_top"  ><span><i class="fa fa-envelope fa-3x"></i></span></a>
+			<a id="e" title="Mail" href="mailto:SpiceBlog@gmail.com?Subject=Whats%20Up?" target="_top"  ><span><i class="fa fa-envelope fa-3x"></i></span></a>
  			
  			
  			

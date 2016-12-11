@@ -45,7 +45,7 @@
           
          
 
-          <a class="navbar-brand" href="index.html"><img  id="brand-image" src="images/navbarpic.png" alt="brand image logo for spice bag" /></a>
+          <a class="navbar-brand" href="index.php"><img  id="brand-image" src="images/SpiceBlogLogo.png" alt="brand image logo for spice blog" /></a>
         </div>
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav navbar-right">
@@ -54,7 +54,7 @@
             <li><a href="page2.php">Review</a></li>
           	<li><a href="page3.php">Shouts</a></li>
             <li><a href="page4.php">Contact</a></li>
-          	<li><a href = "signup.php">SignUp</a></li>
+          	<li><a href = "signup.php">Sign Up</a></li>
             <?php
 		if(isset($_SESSION['id'])){
 			echo "<form action='includes/logout.inc.php'>

@@ -4,9 +4,10 @@ function setComments($conn){
 	if(isset($_POST['commentSubmit'])){
 		$uid = $_POST['uid'];
 		$date = $_POST['date'];
+		$title = $_POST['title'];
 		$message = $_POST['message'];
 
-		$sql = "INSERT INTO comments (uid, date, message) VALUES ('$uid', '$date', '$message')";
+		$sql = "INSERT INTO comments (uid, date, title, message) VALUES ('$uid', '$date', '$title', '$message' )";
 $result = mysqli_query($conn, $sql);
 	}
 }
@@ -22,6 +23,7 @@ function getComments($conn){
 			echo "<div class = 'comment-box'><p>";
 			echo $row2['uid']."<br>";
 			echo $row['date']."<br>";
+			echo nl2br($row['title'])."<br>";
 			echo nl2br($row['message']);
 		echo "</p>";
 		if(isset($_SESSION['id'])){
@@ -29,14 +31,23 @@ function getComments($conn){
 				echo "<form class='delete-form' method='POST' action='".deleteComments($conn)."'>
 				<input type='hidden' name='cid' value='".$row['cid']."'>
 
-				<button type='submit' name='commentDelete'>Delete</button>
+				<button class='btn btn-default' type='submit' name='commentDelete'>Delete</button>
 			</form>
+			
 			<form class='edit-form' method='POST' action='editcomments.php'>
-				<input type='hidden' name='cid' value='".$row['cid']."'>
-				<input type='hidden' name='uid' value='".$row['uid']."'>
-				<input type='hidden' name='date' value='".$row['date']."'>
-				<input type='hidden' name='message' value='".$row['message']."'>
-				<button>Edit</button>
+			<div class='form-group'>
+				<input class='form-control' type='hidden' name='cid' value='".$row['cid']."'>
+			</div>
+			<div class='form-group'>
+				<input class='form-control' type='hidden' name='uid' value='".$row['uid']."'>
+			</div>
+			<div class='form-group'>
+				<input class='form-control' type='hidden' name='date' value='".$row['date']."'>
+			</div>
+			<div class='form-group'>
+				<input class='form-control' type='hidden' name='message' value='".$row['message']."'>
+			</div>
+				<button class='btn btn-default'>Edit</button>
 			</form>";
 			}
 		}
@@ -73,6 +84,6 @@ function deleteComments($conn){
 
 		$sql = "DELETE FROM comments WHERE CID='$cid'";
 		$result = mysqli_query($conn, $sql);
-		header("Location: index.php");
+
 	}
 }
