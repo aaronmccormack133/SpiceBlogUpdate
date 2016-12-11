@@ -123,6 +123,7 @@ Then create 2 tables
 
 
 CREATE TABLE user(
+
 	id int(11) NOT NULL auto_increment, 
 	
 	first VARCHAR(128) NOT NULL,
@@ -154,6 +155,7 @@ CREATE TABLE comments(
     message text not null
     
 );
+
 ------------------------------------------------------------------------------------------------------------------------
 
 
