@@ -122,15 +122,19 @@ Created database has to be called - logintest;
 Then create 2 tables
 
 
-
-
 CREATE TABLE user(
 	id int(11) NOT NULL auto_increment, 
+	
 	first VARCHAR(128) NOT NULL,
+	
 	last VARCHAR(128) NOT NULL,
+	
 	uid VARCHAR(128) NOT NULL,
+	
 	pwd VARCHAR(1000) NOT NULL,
+	
 	PRIMARY KEY (id)
+	
 );
 
 
@@ -138,11 +142,17 @@ CREATE TABLE user(
 
 
 CREATE TABLE comments(
+
     cid INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    
     uid VARCHAR(128) not null,
+    
     date datetime not null,
+    
      title text not null,
+     
     message text not null
+    
 );
 ------------------------------------------------------------------------------------------------------------------------
 
