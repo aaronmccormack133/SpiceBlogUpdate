@@ -88,7 +88,7 @@ http://www.w3schools.com/sql/sql_select.asp
 Captcha
 https://www.phpcaptcha.org/documentation/quickstart-guide/
 
-
+--------------------------------------------------------------------------------------------
 
 How to append JSON on Mac
 My solution was:
