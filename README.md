@@ -92,16 +92,26 @@ https://www.phpcaptcha.org/documentation/quickstart-guide/
 
 How to append JSON on Mac
 My solution was:
-Open applications folder
-Locate XAMPP folder
-Right click, get info (as described above)
-In pop-up window locate the 'sharing & permission' section
-Click the 'locked' padlock symbol
-Enter admin password
-Change 'Everyone' permissions to read & write
+Open applications folder.
+
+Locate XAMPP folder.
+
+Right click, get info (as described above).
+
+In pop-up window locate the 'sharing & permission' section.
+
+Click the 'locked' padlock symbol.
+
+Enter admin password.
+
+Change 'Everyone' permissions to read & write.
+
 In the get info window still, select the 'cog' icon' drop down option at the very bottom and select 'Apply to enclosed items' this will adjust the permission across all sub-folders as well.
-Re-lock the padlock symbol
+
+Re-lock the padlock symbol.
+
 Close the 'Get Info' window.
+
 Task complete, this will now allow you to populate sub-folders within the htdocs folder as needed to populate your website(s).
 ------------------------------------------------------------------------------------------------------------------------
 How to create Database
