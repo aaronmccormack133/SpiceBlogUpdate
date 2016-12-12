@@ -5,7 +5,7 @@
 <?php  
 $message = '';  
 $error = '';  
-include_once $_SERVER['DOCUMENT_ROOT'] . '/spice/securimage/securimage.php';
+include_once $_SERVER['DOCUMENT_ROOT'] . '/SpiceBlogUpdate/securimage/securimage.php';
 $securimage = new Securimage();
 $secureimage = '';
 if(isset($_POST["submit"])){  
