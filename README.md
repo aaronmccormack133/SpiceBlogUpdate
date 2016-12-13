@@ -1,7 +1,7 @@
 # SpiceBlogUpdate
 
 If downloaded as a zip file, change line 8 on page4.php to "include_once $_SERVER['DOCUMENT_ROOT'] . '/SpiceBlogUpdate-master/securimage/securimage.php';"
-If cloned from terminal no chnaged need to be made.
+If cloned from terminal no changes need to be made.
 
 Previously there was two other repositories, but because of some errors with pushing, pulling and merging, we had to create other repositories. These repositories can be located at https://github.com/aaronmccormack15533/SnowWorriesWebApps and https://github.com/aaronmccormack15533/SpiceBlog
 
